@@ -8,7 +8,7 @@ import { motion } from 'framer-motion'
 
 export function Hero25() {
   return (
-    <Container className="relative -mt-40 pt-20">
+    <Container className="relative pt-20">
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -46,12 +46,6 @@ export function Hero25() {
             for any related collaborations.
           </p>
         </div>
-        <Button
-          href="#"
-          className="relative mt-10 w-full overflow-hidden bg-cyan-600 text-white transition-colors before:absolute before:left-0 before:top-0 before:h-full before:w-full before:translate-x-[-200%] before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:transition-transform before:duration-700 hover:bg-cyan-700 hover:before:translate-x-[200%] sm:hidden"
-        >
-          Get your tickets
-        </Button>
         <dl className="mt-16 grid grid-cols-2 gap-x-10 gap-y-6 sm:mt-20 sm:gap-x-16 sm:gap-y-10 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
           {[
             ['Speakers', '20+'],
