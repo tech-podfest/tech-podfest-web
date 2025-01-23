@@ -9,7 +9,7 @@ import Image from 'next/image'
 const navLinks = [
   { label: 'TPF25', href: '/tpf25', isActive: true },
   { label: 'TPF23', href: 'https://podfest.tech', isActive: false },
-  { label: 'TPF22', href: '/tpf22', isActive: false },
+  // { label: 'TPF22', href: '/tpf22', isActive: false },
 ] as const
 
 export function Header() {
