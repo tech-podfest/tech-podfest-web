@@ -1,6 +1,7 @@
 import { type Metadata } from 'next'
 import { DM_Sans, Inter } from 'next/font/google'
 import clsx from 'clsx'
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 
 import '@/styles/tailwind.css'
 
@@ -19,11 +20,11 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - DeceptiConf',
-    default: 'DeceptiConf - A community-driven design conference',
+    template: '%s - Tech PodFest',
+    default: 'Tech PodFest - Global Tech Podcast Festival',
   },
   description:
-    'At DeceptiConf you’ll learn about the latest dark patterns being developed to trick even the smartest visitors, and you’ll learn how to deploy them without ever being detected.',
+    'Tech PodFest is a global tech podcast festival, bringing together the best tech podcasts from around the world.',
 }
 
 export default function RootLayout({
@@ -43,6 +44,7 @@ export default function RootLayout({
       <body className="flex min-h-full">
         <div className="flex w-full flex-col">{children}</div>
       </body>
+      <GoogleTagManager gtmId="G-5D7QBL0Q9M" />
     </html>
   )
 }

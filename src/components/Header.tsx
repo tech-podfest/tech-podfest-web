@@ -9,14 +9,14 @@ import Image from 'next/image'
 const navLinks = [
   { label: 'TPF25', href: '/tpf25', isActive: true },
   { label: 'TPF23', href: 'https://podfest.tech', isActive: false },
-  { label: 'TPF22', href: '/tpf22', isActive: false },
+  // { label: 'TPF22', href: '/tpf22', isActive: false },
 ] as const
 
 export function Header() {
   return (
-    <header className="fixed left-0 right-0 top-0 z-50">
+    <header className="fixed left-0 right-0 top-0 z-50 bg-transparent backdrop-blur-md">
       <motion.div
-        className="absolute inset-0 -z-10 backdrop-blur-[2px]"
+        className="absolute inset-0 -z-10 bg-white/10 dark:bg-slate-900/20"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
